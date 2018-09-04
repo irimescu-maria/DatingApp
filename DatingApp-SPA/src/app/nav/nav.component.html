@@ -18,7 +18,7 @@
     Welcome {{authService.decodedToken?.unique_name | titlecase}}
   </a>
 
-  <div class="dropdown-menu" *dropdownMenu>
+  <div class="dropdown-menu mt-3" *dropdownMenu>
     <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit Profile</a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item" (click)="logout()"><i class="fa fa-sign-out"></i>Logout</a>
@@ -31,5 +31,4 @@
   <button [disabled]="!loginForm.valid" class="btn btn-secondary my-2 my-sm-0" type="submit">Login</button>
 </form>
 </div>
-  
 </nav>
